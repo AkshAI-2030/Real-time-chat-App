@@ -8,10 +8,13 @@ const Register = ({ setUser }) => {
 
   const handleRegister = async () => {
     try {
-      const { data } = await axios.post("http://localhost:5001/auth/register", {
-        username,
-        password,
-      });
+      const { data } = await axios.post(
+        "https://real-time-chat-app-backend-1prx4u75t-akshay-arellis-projects.vercel.app/auth/register",
+        {
+          username,
+          password,
+        }
+      );
 
       setRegistrationSuccess(
         "You are registered successfully. Proceed to login."

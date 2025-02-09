@@ -4,10 +4,11 @@ import axios from "axios";
 import MessageList from "./MessageList";
 import "./chat.css";
 
-const ENDPOINT = "http://localhost:5001"; // Define endpoint
+const ENDPOINT =
+  "https://real-time-chat-app-backend-1prx4u75t-akshay-arellis-projects.vercel.app/"; // Define endpoint
 const socket = io(ENDPOINT, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://real-time-chat-app-frontend-ashen.vercel.app/",
   },
 });
 
