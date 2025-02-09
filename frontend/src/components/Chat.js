@@ -5,12 +5,8 @@ import MessageList from "./MessageList";
 import "./chat.css";
 
 const ENDPOINT =
-  "https://real-time-chat-app-backend-1prx4u75t-akshay-arellis-projects.vercel.app/"; // Define endpoint
-const socket = io(ENDPOINT, {
-  cors: {
-    origin: "https://real-time-chat-app-frontend-ashen.vercel.app/",
-  },
-});
+  "https://real-time-chat-app-backend-1prx4u75t-akshay-arellis-projects.vercel.app"; // Define endpoint
+const socket = io(ENDPOINT);
 
 export const Chat = ({ user }) => {
   const [users, setUsers] = useState([]);

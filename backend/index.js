@@ -10,15 +10,21 @@ const User = require("./models/User");
 
 dotenv.config();
 const app = express();
+app.use(
+  cors({
+    origin: "https://real-time-chat-app-frontend-ashen.vercel.app", // Frontend URL
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true, // Allow cookies, auth headers
+  })
+);
+app.use(express.json());
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://real-time-chat-app-frontend-ashen.vercel.app/",
+    origin: "https://real-time-chat-app-frontend-ashen.vercel.app",
+    credentials: true,
   },
 });
-
-app.use(cors());
-app.use(express.json());
 
 mongoose
   .connect(process.env.MONGO_URI)
