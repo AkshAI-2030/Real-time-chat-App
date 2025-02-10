@@ -9,7 +9,7 @@ const Register = ({ setUser }) => {
   const handleRegister = async () => {
     try {
       const { data } = await axios.post(
-        "https://real-time-chat-app-backend-1prx4u75t-akshay-arellis-projects.vercel.app/auth/register",
+        "https://real-time-chat-app-backend-8kq3.onrender.com/auth/register",
         {
           username,
           password,

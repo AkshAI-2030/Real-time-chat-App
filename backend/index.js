@@ -11,15 +11,13 @@ const User = require("./models/User");
 dotenv.config();
 const app = express();
 
-const corsOptions = {
-  origin: "https://real-time-chat-app-frontend-ashen.vercel.app",
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-  credentials: true,
-};
-
-app.use(cors(corsOptions));
-app.options("*", cors(corsOptions));
+app.use(
+  cors({
+    origin: "https://real-time-chat-app-frontend-ashen.vercel.app", // Your vercel frontend URL
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 
 app.use(express.json());
 const server = http.createServer(app);
@@ -30,7 +28,6 @@ const io = new Server(server, {
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
   },
-  transports: ["polling"], // Ensure both transports are allowed
 });
 
 mongoose
