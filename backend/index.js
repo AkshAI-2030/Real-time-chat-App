@@ -19,16 +19,18 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-
-// Manually handle preflight requests
 app.options("*", cors(corsOptions));
 
 app.use(express.json());
 const server = http.createServer(app);
 const io = new Server(server, {
-  cors: corsOptions, // Use the same CORS settings
+  cors: {
+    origin: "https://real-time-chat-app-frontend-ashen.vercel.app",
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
+  },
 });
-
 
 mongoose
   .connect(process.env.MONGO_URI)

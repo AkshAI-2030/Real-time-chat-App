@@ -6,13 +6,10 @@ import "./chat.css";
 
 const ENDPOINT =
   "https://real-time-chat-app-backend-1prx4u75t-akshay-arellis-projects.vercel.app"; // Define endpoint
-const socket = io(
-  "https://real-time-chat-app-backend-1prx4u75t-akshay-arellis-projects.vercel.app",
-  {
-    transports: ["polling"], // Force polling mode
-    withCredentials: true, // Ensure authentication cookies are sent
-  }
-);
+const socket = io(ENDPOINT, {
+  transports: ["websocket", "polling"], // Allow both transport types
+  withCredentials: true, // Ensure authentication cookies are sent
+});
 
 export const Chat = ({ user }) => {
   const [users, setUsers] = useState([]);
