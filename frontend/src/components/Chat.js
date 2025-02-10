@@ -9,7 +9,7 @@ const ENDPOINT =
 const socket = io(
   "https://real-time-chat-app-backend-1prx4u75t-akshay-arellis-projects.vercel.app",
   {
-    transports: ["websocket", "polling"], // Allow both transport types
+    transports: ["polling"], // Allow both transport types
     withCredentials: true, // Ensure authentication cookies are sent
   }
 );
