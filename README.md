@@ -18,6 +18,21 @@ A real-time chat application built using Node.js, Express, React, and Socket.io,
 
 ---
 
+## 🖼️ Screenshots
+
+<img width="1440" alt="Image" src="https://github.com/user-attachments/assets/0247efd8-9482-4f54-9c63-9eff6d87ec9c" />
+
+---
+
+<img width="1167" alt="Image" src="https://github.com/user-attachments/assets/b153bba1-3668-4bc4-91bc-59361be3398e" />
+
+---
+
+<img width="1208" alt="Image" src="https://github.com/user-attachments/assets/539b7063-c29b-4f44-842a-ad5f975a1517" />
+
+---
+
+
 ## 🛠️ Tech Stack
 - **Frontend:** React
 - **Backend:** Node.js, Express
@@ -64,13 +79,6 @@ A real-time chat application built using Node.js, Express, React, and Socket.io,
    npm install
    npm start
    ```
-
----
-
-## 🖼️ Screenshots
-
-*(Include relevant screenshots here)*
-
 ---
 
 ---
