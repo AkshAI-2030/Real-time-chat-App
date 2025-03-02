@@ -13,8 +13,18 @@ A real-time chat application built using Node.js, Express, React, and Socket.io,
 
 --- 
 
-## 📡 Live Demo URL
-[Live Chat App](https://real-time-chat-app-frontend-ashen.vercel.app/)
+## 📡 Live Video and URL:
+
+<div>
+    <a href="https://www.loom.com/share/bb1f69d1f9384bf49e6027da2346ca62">
+      <p>Real-time-chat-App-VideoDemo - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/bb1f69d1f9384bf49e6027da2346ca62">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/bb1f69d1f9384bf49e6027da2346ca62-0b5cf02351322801-full-play.gif">
+    </a>
+  </div>
+  
+- **[Live Chat App]**(https://real-time-chat-app-frontend-ashen.vercel.app/)
 
 ---
 
